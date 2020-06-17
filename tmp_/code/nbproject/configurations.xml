@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <logicalFolder name="data_encoder"
+                     displayName="data_encoder"
+                     projectFiles="true">
+        <itemPath>src/data_encoder/TurtleParser.cpp</itemPath>
+        <itemPath>src/data_encoder/TurtleParser.hpp</itemPath>
+        <itemPath>src/data_encoder/Type.hpp</itemPath>
+        <itemPath>src/data_encoder/constants.h</itemPath>
+        <itemPath>src/data_encoder/parser.cpp</itemPath>
+        <itemPath>src/data_encoder/parser.h</itemPath>
+        <itemPath>src/data_encoder/partitioner_store.cpp</itemPath>
+        <itemPath>src/data_encoder/partitioner_store.h</itemPath>
+        <itemPath>src/data_encoder/profiler.cpp</itemPath>
+        <itemPath>src/data_encoder/profiler.h</itemPath>
+        <itemPath>src/data_encoder/row.h</itemPath>
+        <itemPath>src/data_encoder/utils.cpp</itemPath>
+        <itemPath>src/data_encoder/utils.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="magiq" displayName="magiq" projectFiles="true">
+        <itemPath>src/magiq/mq_global_params.h</itemPath>
+        <itemPath>src/magiq/mq_matlab_compiler.h</itemPath>
+        <itemPath>src/magiq/mq_matrix.h</itemPath>
+        <itemPath>src/magiq/mq_qgraph.h</itemPath>
+        <itemPath>src/magiq/mq_qplan.h</itemPath>
+        <itemPath>src/magiq/mq_query_exec.h</itemPath>
+        <itemPath>src/magiq/mq_simple_logger.h</itemPath>
+        <itemPath>src/magiq/mq_simple_timer.h</itemPath>
+        <itemPath>src/magiq/mq_types.h</itemPath>
+        <itemPath>src/magiq/mq_util.h</itemPath>
+        <itemPath>src/magiq/query_exec.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="query_parser"
+                     displayName="query_parser"
+                     projectFiles="true">
+        <itemPath>src/query_parser/DataEncoder.h</itemPath>
+        <itemPath>src/query_parser/QueryEncoder.h</itemPath>
+        <itemPath>src/query_parser/SPARQLLexer.cpp</itemPath>
+        <itemPath>src/query_parser/SPARQLLexer.hpp</itemPath>
+        <itemPath>src/query_parser/SPARQLParser.cpp</itemPath>
+        <itemPath>src/query_parser/SPARQLParser.hpp</itemPath>
+        <itemPath>src/query_parser/node.cpp</itemPath>
+        <itemPath>src/query_parser/node.h</itemPath>
+        <itemPath>src/query_parser/query.cpp</itemPath>
+        <itemPath>src/query_parser/query.h</itemPath>
+        <itemPath>src/query_parser/query_parser.cpp</itemPath>
+        <itemPath>src/query_parser/query_parser.h</itemPath>
+      </logicalFolder>
+      <itemPath>src/main.cc</itemPath>
+      <itemPath>src/mq_interface.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+            <pElem>src/data_encoder</pElem>
+            <pElem>src/magiq</pElem>
+            <pElem>src/query_parser</pElem>
+          </incDir>
+          <commandLine>-fopenmp</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+          </linkerDynSerch>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-lgraphblas -fopenmp</commandLine>
+        </linkerTool>
+      </compileType>
+      <folder path="src/data_encoder">
+        <ccTool>
+          <commandLine>-w</commandLine>
+        </ccTool>
+      </folder>
+      <folder path="src/query_parser">
+        <ccTool>
+          <commandLine>-w</commandLine>
+        </ccTool>
+      </folder>
+      <item path="src/data_encoder/TurtleParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/TurtleParser.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/Type.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/partitioner_store.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/data_encoder/partitioner_store.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/data_encoder/profiler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/profiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/row.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_global_params.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_matlab_compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_matrix.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_qgraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_qplan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_query_exec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_simple_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_simple_timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/query_exec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mq_interface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/DataEncoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/QueryEncoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLLexer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLLexer.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLParser.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/query.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/query.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/query_parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/query_parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+            <pElem>src/data_encoder</pElem>
+            <pElem>src/magiq</pElem>
+            <pElem>src/query_parser</pElem>
+          </incDir>
+          <commandLine>-fopenmp</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>SS_GraphBLAS_1.10</pElem>
+          </linkerDynSerch>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-lgraphblas -fopenmp</commandLine>
+        </linkerTool>
+      </compileType>
+      <folder path="src/data_encoder">
+        <ccTool>
+          <commandLine>-w</commandLine>
+        </ccTool>
+      </folder>
+      <folder path="src/query_parser">
+        <ccTool>
+          <commandLine>-w</commandLine>
+        </ccTool>
+      </folder>
+      <item path="src/data_encoder/TurtleParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/TurtleParser.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/Type.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/partitioner_store.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/data_encoder/partitioner_store.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/data_encoder/profiler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/profiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/row.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/data_encoder/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/data_encoder/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_global_params.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_matlab_compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_matrix.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_qgraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_qplan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_query_exec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_simple_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_simple_timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/mq_util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/magiq/query_exec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mq_interface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/DataEncoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/QueryEncoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLLexer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLLexer.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/SPARQLParser.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/query.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/query.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/query_parser/query_parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/query_parser/query_parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
